@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuickPy</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+
+    <header>
+        <span id="menu"><i class="fas fa-bars"></i></span>
+        <p>QuickPy</p>
+        <div>
+            <span id="toggleBtn"><i class="fas fa-adjust"></i></span>
+            <span id="streak"><i class="fas fa-fire"></i> 0</span>
+        </div>
+    </header>
+
+    <!-- Side Menu -->
+    <div id="sideMenu">
+        <div class="sideMenuHeader">
+            <span class="menu-title">Menu</span>
+            <button id="closeMenuBtn" class="sideMenuItem">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <a href="index.html" class="sideMenuItem">
+            <i class="fas fa-home"></i> Home
+        </a>
+        <a href="about.html" class="sideMenuItem">
+            <i class="fas fa-info-circle"></i> About
+        </a>
+        <a href="search.html" class="sideMenuItem">
+            <i class="fas fa-search"></i> Search scripts
+        </a>
+        <a href="learn.html" class="sideMenuItem">
+            <i class="fas fa-book"></i> Learn Python
+        </a>
+        <a href="quiz.html" class="sideMenuItem">
+            <i class="fas fa-question-circle"></i> Python quiz
+        </a>
+        <a href="run.html" class="sideMenuItem">
+            <i class="fas fa-play-circle"></i> Run Python
+        </a>
+        <a href="favorites.html" class="sideMenuItem">
+            <i class="fas fa-heart"></i> Favorites
+        </a>
+    </div>
+
+    <!-- Hero Section -->
+    <div class="container">
+        <h1>Get instant free python scripts to test!</h1>
+    </div>
+
+    <!-- About Python Sections -->
+    <div class="about-python fade-in-element">
+        <h1 class="line-text">History of Python: </h1>
+
+        <img src="images/python-logo.png" alt="Python Logo" class="python-logo" />
+        <p>Python’s story began in December 1989 as a "hobby" project by Dutch programmer Guido van Rossum, who wanted
+            to build a successor to the ABC language that could actually talk to an operating system. Despite what the
+            name suggests, it wasn't inspired by the snake; Van Rossum was simply in an "irreverent mood" while reading
+            scripts from the BBC comedy series Monty Python’s Flying Circus. From its first official release in 1991,
+            Python prioritized readability and simplicity, famously captured in the "Zen of Python"—a philosophy that
+            there should be "one obvious way to do it". Over three decades, it has evolved from a niche scripting tool
+            into a global powerhouse, surviving a major, non-backward-compatible shift with Python 3.0 in 2008 to
+            eventually dominate modern fields like artificial intelligence and data science.</p>
+    </div>
+
+    <!-- Good resources to learn Python -->
+    <div class="good-resources fade-in-element">
+        <h1 class="line-text">Where can you learn Python?</h1>
+
+        <p>By 2012, Python’s status as a top-tier programming language was firmly established, making it a critical
+            skill for any developer to master.</p>
+        <p>So, here are some good Youtube resources you can use to learn Python: </p>
+
+        <ul style="text-align: left;">
+            <li>Programming with Mosh - <a href="https://www.youtube.com/watch?v=_uQrJ0TkZlc&vl=en">Link to video</a>
+            </li>
+            <li>Bro code - <a href="https://www.youtube.com/watch?v=ix9cRaBkVe0">Link to video</a></li>
+            <li>Tell Science - <a
+                    href="https://www.youtube.com/watch?v=Q3Uq_rJiGjk&list=PLFr2LGjFe-E0i_fjtSG5IA3kOqYFe1G45">Link to
+                    playlist</a></li>
+        </ul>
+    </div>
+
+    <!-- Invitation Section -->
+    <div class="inv fade-in-element">
+        <h1>Are you ready to learn Python?</h1>
+        <p>
+            Click here to get a free interactive course to learn the bascics of Python now.
+        </p>
+        <button onclick="window.location.href='learn.html'"><i class="fas fa-book"></i> Learn</button>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>QuickPy</p>
+        <div class="right-icons">
+            <a href="#" class="icon" style="color:white;"><i class="fa-brands fa-square-facebook"></i></a>
+            <a href="#" class="icon" style="color:orange;"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" class="icon" style="color:aqua;"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#" class="icon" style="color:white;"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+    </footer>
+
+    <script src="js/menu.js"></script>
+    <script src="js/fadeIn.js"></script>
+    <script src="js/themeToggle.js"></script>
+    <script src="js/streak.js"></script>
+
+</body>
+
+</html>

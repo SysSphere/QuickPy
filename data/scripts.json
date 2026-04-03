@@ -1,0 +1,104 @@
+{
+  "scripts": [
+    {
+      "name": "hello_world",
+      "description": "Print hello world",
+      "code": "print('Hello, world!')"
+    },
+    {
+      "name": "sum_numbers",
+      "description": "Add two numbers",
+      "code": "a = 10\nb = 20\nprint('Sum:', a + b)"
+    },
+    {
+      "name": "factorial",
+      "description": "Calculate factorial",
+      "code": "def factorial(n):\n    if n == 0:\n        return 1\n    return n * factorial(n-1)\n\nprint(factorial(5))"
+    },
+    {
+      "name": "fibonacci",
+      "description": "Generate Fibonacci numbers",
+      "code": "a, b = 0, 1\nfor _ in range(10):\n    print(a)\n    a, b = b, a + b"
+    },
+    {
+      "name": "random_number",
+      "description": "Generate random number",
+      "code": "import random\nprint(random.randint(1,100))"
+    },
+    {
+      "name": "list_files",
+      "description": "List files in current directory",
+      "code": "import os\nfor f in os.listdir('.'):\n    print(f)"
+    },
+    {
+      "name": "read_file",
+      "description": "Read text file",
+      "code": "with open('example.txt','r') as f:\n    print(f.read())"
+    },
+    {
+      "name": "write_file",
+      "description": "Write text to file",
+      "code": "with open('output.txt','w') as f:\n    f.write('Hello from Python')"
+    },
+    {
+      "name": "JSON_parse",
+      "description": "Parse JSON string",
+      "code": "import json\ndata = '{\"name\":\"John\",\"age\":30}'\nobj = json.loads(data)\nprint(obj['name'])"
+    },
+    {
+      "name": "HTTP_request",
+      "description": "Make HTTP request",
+      "code": "import requests\nr = requests.get('https://api.github.com')\nprint(r.status_code)"
+    },
+    {
+      "name": "current_time",
+      "description": "Print current time",
+      "code": "from datetime import datetime\nprint(datetime.now())"
+    },
+    {
+      "name": "count_words",
+      "description": "Count words in string",
+      "code": "text = 'Python makes coding powerful'\nprint(len(text.split()))"
+    },
+    {
+      "name": "sort_list",
+      "description": "Sort a list",
+      "code": "numbers = [5,3,8,1,2]\nnumbers.sort()\nprint(numbers)"
+    },
+    {
+      "name": "reverse_string",
+      "description": "Reverse a string",
+      "code": "text = 'Python'\nprint(text[::-1])"
+    },
+    {
+      "name": "prime_check",
+      "description": "Check if number is prime",
+      "code": "num = 29\nfor i in range(2, num):\n    if num % i == 0:\n        print('Not prime')\n        break\nelse:\n    print('Prime')"
+    },
+    {
+      "name": "reverse_string_input",
+      "description": "Ask the user to input text and then reverse it",
+      "code": "def reverse():\n    stop = False\n    while stop != True:\n        text = input('Enter text: ')\n        print(text[::-1])\n        again = input('Again? (Y/N) ')\n        if again.upper() == 'Y':\n            continue\n        else:\n            print('Goodbye!')\n            stop = True\n\nreverse()"
+    },
+    {
+      "name": "palindrome_check",
+      "description": "Check if input is a palindrome",
+      "code": "text = input('Enter text: ')\nif text == text[::-1]:\n    print('Palindrome')\nelse:\n    print('Not palindrome')"
+    },
+    {
+      "name": "temperature_convert",
+      "description": "Convert Celsius to Fahrenheit",
+      "code": "c = float(input('Celsius: '))\nf = (c * 9/5) + 32\nprint(f'Celsius {c} = Fahrenheit {f}')"
+    },
+    {
+      "name": "simple_calculator",
+      "description": "Add, subtract, multiply, divide two numbers",
+      "code": "a = float(input('First: '))\nb = float(input('Second: '))\nop = input('Operation (+,-,*,/): ')\nif op == '+':\n    print(a+b)\nelif op == '-':\n    print(a-b)\nelif op == '*':\n    print(a*b)\nelif op == '/':\n    print(a/b)\nelse:\n    print('Invalid operator')"
+    },
+    {
+      "name": "count_vowels",
+      "description": "Count vowels in input text",
+      "code": "text = input('Enter text: ')\nvowels = 'aeiouAEIOU'\ncount = sum(1 for c in text if c in vowels)\nprint('Vowels:', count)"
+    }
+  ]
+}

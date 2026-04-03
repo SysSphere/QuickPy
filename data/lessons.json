@@ -1,0 +1,214 @@
+{
+  "lessons": [
+    {
+      "name": "Lesson 1: The print() Function & Standard Output",
+      "content": "The print() function is the primary way to output data to the standard output (usually your terminal). Behind the scenes, Python converts the data you provide into a stream of characters. You can use single, double, or even triple quotes for multi-line strings. Note that every print() call automatically ends with a newline character unless you specify otherwise using the 'end' parameter.",
+      "code": "print(\"Hello, World!\")\nprint(\"Python\", \"is\", \"awesome\", sep=\"-\", end=\"!\")",
+      "index": 1
+    },
+    {
+      "name": "Lesson 2: Memory Management & Variable Assignment",
+      "content": "In Python, variables are references to objects in memory, not the boxes themselves. When you write 'x = 10', Python creates an integer object '10' and makes 'x' point to it. This is called 'dynamic typing,' meaning you don't need to declare the type (like int or string) beforehand; Python infers it at runtime based on the value assigned.",
+      "code": "user_age = 25\nusername = \"Dev_User\"\nprint(f\"{username} is {user_age} years old.\")",
+      "index": 2
+    },
+    {
+      "name": "Lesson 3: The nuances of Python Arithmetic",
+      "content": "Python supports all standard operators (+, -, *, /), but it includes unique ones like Floor Division (//), which discards the decimal, and Modulo (%), which returns the remainder. This is crucial for logic like checking if a number is even (n % 2 == 0). Unlike some languages, Python 3's standard division (/) always returns a float, even if the result is a whole number.",
+      "code": "total = 17\nprint(total / 3)   # 5.666...\nprint(total // 3)  # 5 (Floor)\nprint(total % 3)   # 2 (Remainder)",
+      "index": 3
+    },
+    {
+      "name": "Lesson 4: Interactive User Input",
+      "content": "The input() function pauses program execution and waits for the user to type something. Critically, input() always returns a String. If you need to perform calculations with a user's response, you must wrap the input in a 'type cast' function like int() or float() to convert the data from text into a number.",
+      "code": "birth_year = input(\"Enter year: \")\nage = 2024 - int(birth_year)\nprint(\"You will be\", age)",
+      "index": 4
+    },
+    {
+      "name": "Lesson 5: String Manipulation & Formatting",
+      "content": "Strings in Python are 'immutable,' meaning they cannot be changed once created; operations create new strings instead. F-strings (formatted string literals) are the modern standard for embedding variables inside text. They are faster and more readable than the older .format() method or the % operator.",
+      "code": "name = \"Python\"\n# Using f-strings\nprint(f\"{name.upper()} has {len(name)} letters.\")",
+      "index": 5
+    },
+    {
+      "name": "Lesson 6: Understanding Booleans & Truthiness",
+      "content": "Booleans (True/False) are the foundation of logic. In Python, many objects have an inherent 'truthiness.' For instance, an empty list [], an empty string \"\", or the number 0 are considered 'False' in a logical context, while almost anything containing data is 'True.'",
+      "code": "is_active = True\nempty_str = \"\"\nprint(bool(empty_str)) # Returns False",
+      "index": 6
+    },
+    {
+      "name": "Lesson 7: Comparison & Identity Operators",
+      "content": "Comparison operators like == (equality) and != (inequality) check if values are the same. However, the 'is' operator checks for 'identity'—whether two variables point to the exact same object in memory. Beginners often confuse '==' with 'is'; use '==' for values and 'is' for checking against 'None'.",
+      "code": "a = [1, 2]\nb = [1, 2]\nprint(a == b) # True (values match)\nprint(a is b) # False (different memory locations)",
+      "index": 7
+    },
+    {
+      "name": "Lesson 8: Logical Gateways (And, Or, Not)",
+      "content": "Logical operators allow you to build complex decision-making. 'And' requires all conditions to be true; 'Or' requires at least one; 'Not' flips the result. Python uses 'short-circuit evaluation,' meaning if an 'Or' condition finds a True value early, it stops checking the rest to save processing power.",
+      "code": "has_key = True\nis_admin = False\nif has_key or is_admin:\n    print(\"Access Granted\")",
+      "index": 8
+    },
+    {
+      "name": "Lesson 9: Flow Control with If/Else",
+      "content": "The 'if' statement evaluates a condition. If True, the indented block of code runs. Indentation is not just for style in Python; it defines the scope of the code. If the condition is False, you can provide an 'else' block or use 'elif' (else-if) to check multiple specific scenarios in order.",
+      "code": "temp = 18\nif temp > 25:\n    print(\"Hot\")\nelif temp > 15:\n    print(\"Mild\")\nelse:\n    print(\"Cold\")",
+      "index": 9
+    },
+    {
+      "name": "Lesson 10: List Data Structures",
+      "content": "Lists are ordered, mutable collections. They can store mixed data types (integers, strings, and even other lists). Because they are 'ordered,' every item has a specific index starting from 0. Negative indexing (like -1) allows you to access items from the end of the list easily.",
+      "code": "tasks = [\"Email\", \"Code\", \"Tea\"]\nprint(tasks[0])  # First\nprint(tasks[-1]) # Last",
+      "index": 10
+    },
+    {
+      "name": "Lesson 11: List Slicing & Subsets",
+      "content": "Slicing allows you to extract a portion of a list using the [start:stop:step] syntax. The 'stop' index is exclusive, meaning Python stops just before that number. This is a powerful way to reverse lists or grab specific chunks of data without using loops.",
+      "code": "nums = [0, 1, 2, 3, 4, 5]\nprint(nums[1:4])  # [1, 2, 3]\nprint(nums[::-1]) # Reverse list",
+      "index": 11
+    },
+    {
+      "name": "Lesson 12: List Methods (Append, Insert, Pop)",
+      "content": "Python provides built-in methods to modify lists. .append() adds an item to the end, .insert() places one at a specific index, and .pop() removes and returns an item. These methods modify the list in place, meaning they don't return a new list; they change the existing one.",
+      "code": "cart = [\"Milk\"]\ncart.append(\"Eggs\")\ncart.pop(0) # Removes Milk\nprint(cart)",
+      "index": 12
+    },
+    {
+      "name": "Lesson 13: The For Loop & Iteration",
+      "content": "A 'for' loop in Python is actually an 'iterator' that visits every item in a collection. Unlike C-style loops that use counters, Python for-loops are designed to be readable and direct. You can iterate over strings, lists, dictionaries, or any object that implements the iterator protocol.",
+      "code": "for char in \"Hi\":\n    print(char.upper())",
+      "index": 13
+    },
+    {
+      "name": "Lesson 14: The Range Function",
+      "content": "When you need to repeat an action a specific number of times, use range(). It generates a sequence of numbers on the fly, which is memory efficient. For example, range(5) produces 0 through 4. You can also specify a start and a step value like range(2, 10, 2).",
+      "code": "for i in range(1, 6):\n    print(f\"Iteration {i}\")",
+      "index": 14
+    },
+    {
+      "name": "Lesson 15: While Loops & Infinite Scenarios",
+      "content": "While loops run as long as a condition is True. They are ideal when you don't know in advance how many times you need to loop (e.g., waiting for user input). Be careful: if the condition never becomes False, you create an 'infinite loop' that can crash your program.",
+      "code": "count = 3\nwhile count > 0:\n    print(count)\n    count -= 1",
+      "index": 15
+    },
+    {
+      "name": "Lesson 16: Loop Control (Break & Continue)",
+      "content": "'Break' immediately terminates the loop, jumping to the next line of code outside it. 'Continue' skips the rest of the current block and jumps straight to the next iteration. These are used to handle special cases or 'early exits' within your loops.",
+      "code": "for n in range(10):\n    if n == 5: break\n    if n % 2 == 0: continue\n    print(n)",
+      "index": 16
+    },
+    {
+      "name": "Lesson 17: Dictionary Basics (Key-Value)",
+      "content": "Dictionaries (dicts) are unordered mappings that store data in key-value pairs. Think of them as a real-world dictionary where you look up a word (key) to find its definition (value). Keys must be unique and 'hashable' (like strings or integers), but values can be anything.",
+      "code": "user = {\"id\": 1, \"name\": \"Samer\"}\nprint(user[\"name\"])",
+      "index": 17
+    },
+    {
+      "name": "Lesson 18: Dictionary Methods & Access",
+      "content": "Accessing a key that doesn't exist in a dictionary will throw a KeyError. To prevent this, use the .get() method, which returns 'None' (or a default value) if the key is missing. You can also use .keys(), .values(), and .items() to inspect different parts of the dictionary.",
+      "code": "score = {\"math\": 90}\nprint(score.get(\"bio\", \"N/A\"))",
+      "index": 18
+    },
+    {
+      "name": "Lesson 19: Tuples & Immutability",
+      "content": "Tuples are like lists, but they use parentheses () and are 'immutable'—they cannot be changed after creation. This makes them slightly faster than lists and safer for data that should stay constant, like geographical coordinates or database records.",
+      "code": "point = (10, 20)\n# point[0] = 5  # This would cause an Error",
+      "index": 19
+    },
+    {
+      "name": "Lesson 20: Set Operations & Uniqueness",
+      "content": "Sets are unordered collections of unique elements. They are perfect for removing duplicates from a list or performing mathematical operations like Union (combining), Intersection (finding commonalities), and Difference.",
+      "code": "a = {1, 2, 3}\nb = {3, 4, 5}\nprint(a & b) # Intersection: {3}",
+      "index": 20
+    },
+    {
+      "name": "Lesson 21: Function Definitions (def)",
+      "content": "Functions allow you to wrap a block of code and give it a name, making it reusable. This follows the DRY principle (Don't Repeat Yourself). A function doesn't execute until you 'call' it by adding parentheses after its name.",
+      "code": "def say_hi():\n    print(\"Hello!\")\n\nsay_hi() # Calling it",
+      "index": 21
+    },
+    {
+      "name": "Lesson 22: Parameters & Arguments",
+      "content": "Parameters are the variables defined in the function signature, while arguments are the actual values passed in. Python supports 'keyword arguments,' which allow you to pass values in any order by specifying the parameter name.",
+      "code": "def greet(name, msg=\"Hi\"):\n    print(f\"{msg}, {name}\")\n\ngreet(name=\"Sarah\")",
+      "index": 22
+    },
+    {
+      "name": "Lesson 23: Return Values & Scope",
+      "content": "The 'return' statement exits a function and sends a result back to the caller. Without a return, a function implicitly returns 'None.' 'Scope' refers to where a variable is accessible; variables created inside a function are 'local' and cannot be seen outside.",
+      "code": "def add(a, b):\n    return a + b\n\nresult = add(5, 5)",
+      "index": 23
+    },
+    {
+      "name": "Lesson 24: Args and Kwargs (*, **)",
+      "content": "Sometimes you don't know how many arguments a user will pass. *args collects extra positional arguments into a tuple, and **kwargs collects extra keyword arguments into a dictionary. This is common in advanced library development.",
+      "code": "def show(*args):\n    for a in args: print(a)\n\nshow(1, 2, \"Three\")",
+      "index": 24
+    },
+    {
+      "name": "Lesson 25: Lambda (Anonymous) Functions",
+      "content": "Lambdas are one-line functions that don't have a name. They are used for short, simple logic, often passed as arguments to other functions like map(), filter(), or sort().",
+      "code": "square = lambda x: x * x\nprint(square(4))",
+      "index": 25
+    },
+    {
+      "name": "Lesson 26: List Comprehension",
+      "content": "This is a concise way to create lists. It replaces multi-line for-loops with a single bracketed expression. It is generally faster and more 'Pythonic' than traditional loops for building new lists.",
+      "code": "nums = [1, 2, 3]\nsq = [x*x for x in nums]\nprint(sq)",
+      "index": 26
+    },
+    {
+      "name": "Lesson 27: Error Handling (Try/Except)",
+      "content": "Bugs happen. Try/Except blocks allow you to 'catch' errors (Exceptions) so your program doesn't crash. You can catch specific errors (like ValueError) or use a general 'except' to handle anything unexpected.",
+      "code": "try:\n    n = int(\"abc\")\nexcept ValueError:\n    print(\"Invalid number!\")",
+      "index": 27
+    },
+    {
+      "name": "Lesson 28: Finally and Else in Errors",
+      "content": "In a try block, 'else' runs if NO error occurred. 'Finally' runs no matter what—whether there was an error or not. 'Finally' is usually used for cleanup tasks, like closing a database connection or a file.",
+      "code": "try:\n    print(\"Testing\")\nfinally:\n    print(\"Always runs\")",
+      "index": 28
+    },
+    {
+      "name": "Lesson 29: Classes and Objects (OOP)",
+      "content": "Object-Oriented Programming (OOP) treats data and functions as single units called 'Objects.' A Class is the blueprint (like a drawing of a car), and an Object is the actual instance (the car itself).",
+      "code": "class Dog:\n    species = \"Canine\"\n\nmy_dog = Dog()",
+      "index": 29
+    },
+    {
+      "name": "Lesson 30: The self Keyword & __init__",
+      "content": "The __init__ method is a constructor that runs automatically when a new object is made. 'self' represents the specific instance of the object, allowing each object to have its own unique data (like a name or age).",
+      "code": "class Cat:\n    def __init__(self, name):\n        self.name = name",
+      "index": 30
+    },
+    {
+      "name": "Lesson 31: Inheritance in OOP",
+      "content": "Inheritance allows a 'child' class to take all features from a 'parent' class. This promotes code reuse. You can 'override' methods in the child class to change how they behave specifically for that subclass.",
+      "code": "class Animal: pass\nclass Bird(Animal): pass",
+      "index": 31
+    },
+    {
+      "name": "Lesson 32: Modules & Import System",
+      "content": "Python is famous for its 'batteries included' philosophy. Modules are just .py files containing code. You use 'import' to bring in external code from the Standard Library (like math or random) or from your own files.",
+      "code": "import random\nprint(random.randint(1, 10))",
+      "index": 32
+    },
+    {
+      "name": "Lesson 33: File I/O (Read and Write)",
+      "content": "Python can interact with your computer's hard drive. Using the 'with' statement is the best practice because it automatically closes the file for you, even if an error occurs, preventing memory leaks.",
+      "code": "with open(\"test.txt\", \"w\") as f:\n    f.write(\"Hello File!\")",
+      "index": 33
+    },
+    {
+      "name": "Lesson 34: Working with JSON Data",
+      "content": "JSON is the language of the web. Python's 'json' module allows you to convert dictionaries into JSON strings (serialization) and JSON strings back into dictionaries (deserialization) for API communication.",
+      "code": "import json\ndata = '{\"id\": 1}'\nobj = json.loads(data)",
+      "index": 34
+    },
+    {
+      "name": "Lesson 35: Virtual Environments & Pip",
+      "content": "Pip is the package manager for Python, used to install 3rd-party libraries. Virtual Environments (venv) are isolated spaces where you can install specific library versions for a project without messing up your whole computer.",
+      "code": "# Terminal commands:\n# python -m venv myenv\n# pip install requests",
+      "index": 35
+    }
+  ]
+}

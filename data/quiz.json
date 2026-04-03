@@ -1,0 +1,194 @@
+{
+  "easy": [
+    {
+      "question": "What is the output of print(2 ** 3)?",
+      "options": [
+        "6",
+        "8",
+        "9",
+        "23"
+      ],
+      "answer": "8"
+    },
+    {
+      "question": "Which of the following is a mutable data type in Python?",
+      "options": [
+        "list",
+        "tuple",
+        "str",
+        "int"
+      ],
+      "answer": "list"
+    },
+    {
+      "question": "What does len('Python') return?",
+      "options": [
+        "5",
+        "6",
+        "7",
+        "Error"
+      ],
+      "answer": "6"
+    },
+    {
+      "question": "Which keyword is used to define a function in Python?",
+      "options": [
+        "function",
+        "def",
+        "fun",
+        "define"
+      ],
+      "answer": "def"
+    },
+    {
+      "question": "What is the output of 5 // 2 in Python?",
+      "options": [
+        "2.5",
+        "2",
+        "3",
+        "0"
+      ],
+      "answer": "2"
+    },
+    {
+      "question": "Which keyword is used to handle exceptions?",
+      "options": [
+        "try",
+        "catch",
+        "error",
+        "handle"
+      ],
+      "answer": "try"
+    },
+    {
+      "question": "Which symbol is used for comments in Python?",
+      "options": [
+        "//",
+        "#",
+        "/* */",
+        "--"
+      ],
+      "answer": "#"
+    },
+    {
+      "question": "Which of these creates a list in Python?",
+      "options": [
+        "{}",
+        "[]",
+        "()",
+        "<>"
+      ],
+      "answer": "[]"
+    },
+    {
+      "question": "Which keyword is used to import a module?",
+      "options": [
+        "include",
+        "require",
+        "import",
+        "load"
+      ],
+      "answer": "import"
+    },
+    {
+      "question": "What does range(3) produce in a loop?",
+      "options": [
+        "0,1,2",
+        "1,2,3",
+        "0,1,2,3",
+        "1,2"
+      ],
+      "answer": "0,1,2"
+    }
+  ],
+  "normal": [
+    {
+      "question": "What is the output of print(2 * 3 + 3 / 3)?",
+      "options": [
+        "3",
+        "8",
+        "7",
+        "33"
+      ],
+      "answer": "7"
+    },
+    {
+      "question": "What is the purpose of lists in Python?",
+      "options": [
+        "Used to store mutable, ordered and non-unique items",
+        "Used to define functions",
+        "Used to store mutable, unordered and unique item",
+        "Used to store key-value pairs"
+      ],
+      "answer": "Used to store mutable, ordered and non-unique items"
+    },
+    {
+      "question": "Explain int vs float",
+      "options": [
+        "Ints are integers while floats can handle decimal",
+        "Both are the same",
+        "None of the above"
+      ],
+      "answer": "Ints are integers while floats can handle decimal"
+    },
+    {
+      "question": "Which keyword is used to define a one-line function in Python?",
+      "options": [
+        "lambda",
+        "def",
+        "fun",
+        "func"
+      ],
+      "answer": "lambda"
+    },
+    {
+      "question": "Explain // vs /",
+      "options": [
+        "// is floor division while / isn't",
+        "/ is floor division while // isn't",
+        "None of the above"
+      ],
+      "answer": "// is floor division while / isn't"
+    },
+    {
+      "question": "Which keyword runs even if an exception fails?",
+      "options": [
+        "try",
+        "catch",
+        "run",
+        "finally"
+      ],
+      "answer": "finally"
+    },
+    {
+      "question": "Which symbol is used for exponent in Python?",
+      "options": [
+        "**",
+        "#",
+        "/* */",
+        "/"
+      ],
+      "answer": "**"
+    },
+    {
+      "question": "Which of these creates a set in Python?",
+      "options": [
+        "{}",
+        "[]",
+        "()",
+        "<>"
+      ],
+      "answer": "{}"
+    },
+    {
+      "question": "What does range(7) produce in a loop?",
+      "options": [
+        "0,1,2,3,4,5,6",
+        "1,2,3,4,5,6",
+        "0,1,2,3,4,5,6,7,8",
+        "1,2"
+      ],
+      "answer": "0,1,2,3,4,5,6"
+    }
+  ]
+}

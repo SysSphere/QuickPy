@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuickPy</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+
+    <header>
+        <span id="menu"><i class="fas fa-bars"></i></span>
+        <p>QuickPy</p>
+        <div>
+            <span id="toggleBtn"><i class="fas fa-adjust"></i></span>
+            <span id="streak"><i class="fas fa-fire"></i> 0</span>
+        </div>
+    </header>
+
+    <!-- Side Menu -->
+    <div id="sideMenu">
+        <div class="sideMenuHeader">
+            <span class="menu-title">Menu</span>
+            <button id="closeMenuBtn" class="sideMenuItem">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <a href="index.html" class="sideMenuItem">
+            <i class="fas fa-home"></i> Home
+        </a>
+        <a href="about.html" class="sideMenuItem">
+            <i class="fas fa-info-circle"></i> About
+        </a>
+        <a href="search.html" class="sideMenuItem">
+            <i class="fas fa-search"></i> Search scripts
+        </a>
+        <a href="learn.html" class="sideMenuItem">
+            <i class="fas fa-book"></i> Learn Python
+        </a>
+        <a href="quiz.html" class="sideMenuItem">
+            <i class="fas fa-question-circle"></i> Python quiz
+        </a>
+        <a href="run.html" class="sideMenuItem">
+            <i class="fas fa-play-circle"></i> Run Python
+        </a>
+        <a href="favorites.html" class="sideMenuItem">
+            <i class="fas fa-heart"></i> Favorites
+        </a>
+    </div>
+
+    <!-- Hero Section -->
+    <div class="container">
+        <h1>Find all your favorite Python scripts!</h1>
+    </div>
+
+    <!-- Favorites Python Sections -->
+    <div class="favorites fade-in-element">
+        <h1 class="line-text">Your Python snippets: </h1>
+
+        <div id="favoriteSnippet"></div>
+    </div>
+
+    <!-- Invitation Section -->
+    <div class="inv fade-in-element">
+        <h1>Are you ready to learn Python?</h1>
+        <p>
+            Click here to get a free interactive course to learn the bascics of Python now.
+        </p>
+        <button onclick="window.location.href='learn.html'"><i class="fas fa-book"></i> Learn</button>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>QuickPy</p>
+        <div class="right-icons">
+            <a href="#" class="icon" style="color:white;"><i class="fa-brands fa-square-facebook"></i></a>
+            <a href="#" class="icon" style="color:orange;"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" class="icon" style="color:aqua;"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#" class="icon" style="color:white;"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+    </footer>
+
+    <script src="js/menu.js"></script>
+    <script src="js/fadeIn.js"></script>
+    <script src="js/themeToggle.js"></script>
+    <script src="js/copyCode.js"></script>
+    <script src="js/favoritesRender.js"></script>
+    <script src="js/streak.js"></script>
+
+</body>
+
+</html>
